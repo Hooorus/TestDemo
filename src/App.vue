@@ -1,13 +1,20 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <router-view></router-view>
   </div>
 </template>
+<script>
+import Default from "@/views/Default.vue";
 
+export default {
+  components: {
+    Default,
+  },
+  data() {
+    return {}
+  }
+}
+</script>
 <style lang="less">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -17,8 +24,13 @@
   color: #2c3e50;
 }
 
+.highlight {
+  background-color: rgb(255, 192, 105);
+  padding: 0px;
+}
+
 nav {
-  padding: 30px;
+
 
   a {
     font-weight: bold;

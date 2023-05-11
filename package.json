@@ -9,6 +9,8 @@
     "electron:build": "vue-cli-service build --mode production && electron-builder build"
   },
   "dependencies": {
+    "ant-design-vue": "^1.7.8",
+    "axios": "^1.4.0",
     "core-js": "^3.8.3",
     "vue": "^2.6.14",
     "vue-router": "^3.5.1"
@@ -22,7 +24,10 @@
     "vue-template-compiler": "^2.6.14"
   },
   "build": {
-    "files": ["**/*", "dist/**/*"],
+    "files": [
+      "**/*",
+      "dist/**/*"
+    ],
     "directories": {
       "buildResources": "dist",
       "output": "release"
